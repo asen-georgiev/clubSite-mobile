@@ -3,9 +3,11 @@ import {Image, ImageBackground, StyleSheet, Text, View} from 'react-native';
 import {createBottomTabNavigator} from "@react-navigation/bottom-tabs";
 import WelcomeScreen from "../screens/WelcomeScreen";
 import Icon from "react-native-vector-icons/Ionicons";
+import {createStackNavigator} from "@react-navigation/stack";
 
 
 const Tab = createBottomTabNavigator();
+
 
 const HomeScreen = () => {
     return(

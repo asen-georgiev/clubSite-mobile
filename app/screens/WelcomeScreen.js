@@ -2,6 +2,7 @@ import React from 'react';
 import {Button, Image, ImageBackground, StyleSheet, Text, View} from 'react-native';
 import WelcomeNavigator from "../navigation/WelcomeNavigator";
 import AppButton from "../components/AppButton";
+import HomeNavigator from "../navigation/HomeNavigator";
 
 function WelcomeScreen({navigation}) {
     return (
@@ -18,7 +19,7 @@ function WelcomeScreen({navigation}) {
                         backgroundColor="navy"
                         color="white"
                         title="To the home page"
-                        onPress={() => navigation.navigate('WelcomeNavigator')}/>
+                        onPress={() => navigation.navigate('HomeNavigator')}/>
                 </View>
             </ImageBackground>
         </React.Fragment>

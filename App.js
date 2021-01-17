@@ -7,6 +7,7 @@ import Icon from "react-native-vector-icons/Ionicons";
 import Constants from "expo-constants";
 import WelcomeScreen from "./app/screens/WelcomeScreen";
 import WelcomeNavigator from "./app/navigation/WelcomeNavigator";
+import HomeNavigator from "./app/navigation/HomeNavigator";
 import {NavigationContainer} from "@react-navigation/native";
 import {SafeAreaProvider} from "react-native-safe-area-context";
 import {createStackNavigator} from "@react-navigation/stack";
@@ -21,7 +22,7 @@ export default function App() {
       <NavigationContainer>
             <Stack.Navigator>
               <Stack.Screen name="Welcome" component={WelcomeScreen}/>
-              <Stack.Screen name="WelcomeNavigator" component={WelcomeNavigator}/>
+              <Stack.Screen name="HomeNavigator" component={HomeNavigator}/>
             </Stack.Navigator>
       </NavigationContainer>
       <StatusBar style="auto" />
